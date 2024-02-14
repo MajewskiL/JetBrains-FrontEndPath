@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Space</title>
+    <link rel="stylesheet"  href="style.css">
+    <script async src="func.js"></script>
+</head>
+<body>
+    <div class="space">
+        <div class="planet-area">
+            <img src="mars.png" class="planet">
+            <img src="rocket.png" class="rocket" id="rocket">
+        </div>
+        <div class="control-panel">
+            <div class="control-panel__inner">
+        <!--    <form> -->
+                <input type="password" id="input-pass" placeholder="Enter password to unlock" type="">
+                <input type="button" id="push_ok" value="OK">
+            <!--        </form> -->
+            <div class="check-buttons">
+                <input type="checkbox" id="chk1" onchange="count()">
+                <input type="checkbox" id="chk2" onchange="count()">
+                <input type="checkbox" id="chk3" onchange="count()">
+                <input type="checkbox" id="chk4" onchange="count()">
+                <input type="checkbox" id="chk5" onchange="count()">
+                <input type="checkbox" id="chk6" onchange="count()">
+            </div>
+            <div class="levers">
+                <input type="range" id="rng1" min="0" onchange="count()">
+                <input type="range" id="rng2" min="0" onchange="count()">
+                <input type="range" id="rng3" min="0" onchange="count()">
+                <input type="range" id="rng4" min="0" onchange="count()">
+                <input type="range" id="rng5" min="0" onchange="count()">
+            </div>
+                <input type="button" id="launch" value="launch" onclick="go()">
+        </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
